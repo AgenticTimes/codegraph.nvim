@@ -1,0 +1,7 @@
+{
+  "name": "codegraph.nvim",
+  "description": "Neovim UI over the codegraph CLI (query / callers / callees / impact)",
+  "engines": {
+    "nvim": ">=0.10.0"
+  }
+}

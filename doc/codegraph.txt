@@ -1,0 +1,25 @@
+*codegraph.txt*  Neovim UI for the codegraph CLI
+
+==============================================================================
+COMMANDS
+
+:CodegraphQuery [name]     Search symbols
+:CodegraphCallers [sym]    Callers (default: word under cursor)
+:CodegraphCallees [sym]    Callees
+:CodegraphImpact [sym]     Impact / affected symbols
+:CodegraphSync             Sync index for project root
+
+==============================================================================
+SETUP
+
+>
+  require("codegraph").setup({
+    cmd = "codegraph",
+    path = nil,
+    limit = 40,
+    impact_depth = 2,
+    picker = "auto",
+  })
+<
+
+vim:tw=78:ts=8:ft=help:norl:

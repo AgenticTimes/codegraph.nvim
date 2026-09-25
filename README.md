@@ -13,8 +13,7 @@ Thin Neovim UI over the [`codegraph`](https://github.com/colbymchenry/codegraph)
 
 ```lua
 {
-  dir = vim.fn.expand("~/source/codegraph.nvim"),
-  name = "codegraph.nvim",
+  "AgenticTimes/codegraph.nvim",
   dependencies = { "nvim-telescope/telescope.nvim" }, -- optional
   config = function()
     require("codegraph").setup({

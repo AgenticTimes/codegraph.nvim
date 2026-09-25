@@ -22,3 +22,7 @@ end, { nargs = "?", desc = "codegraph impact of symbol (default: <cword>)" })
 vim.api.nvim_create_user_command("CodegraphSync", function()
   require("codegraph").sync()
 end, { desc = "codegraph sync index for current project" })
+
+vim.api.nvim_create_user_command("CodegraphRoot", function()
+  require("codegraph").root()
+end, { desc = "show codegraph index root for current buffer" })
